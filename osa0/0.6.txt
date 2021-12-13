@@ -1,0 +1,8 @@
+selain->palvelin: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over palvelin:
+palvelin lisää JSON-dataan uuden
+pyyntönä tulleen JSON-muotoisen noten
+end note
+
+palvelin-->selain: 201 Created, {"message": "note created"}
