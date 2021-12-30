@@ -2,7 +2,8 @@ module.exports = {
   'env': {
     'node': true,
     'commonjs': true,
-    'es2021': true
+    'es2021': true,
+    'jest': true
   },
   'extends': 'eslint:recommended',
   'parserOptions': {
@@ -17,10 +18,10 @@ module.exports = {
       'error',
       'unix'
     ],
-    /*'quotes': [
+    'quotes': [
       'error',
       'single'
-    ], */
+    ],
     'semi': [
       'error',
       'never'
