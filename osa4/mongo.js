@@ -7,7 +7,7 @@ if(process.argv.length<3) {
 
 const password = process.argv[2]
 
-const mongoUrl = `mongodb+srv://fullstack:${password}@cluster0.aq27e.mongodb.net/blogilista?retryWrites=true`
+const mongoUrl = `mongodb+srv://fullstack:${password}@cluster0.aq27e.mongodb.net/blogilista-test?retryWrites=true`
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
 
 const blogSchema = mongoose.Schema({
@@ -20,10 +20,10 @@ const blogSchema = mongoose.Schema({
 const Blog = mongoose.model('Blog', blogSchema)
 
 const blog = new Blog({
-  title: "Penkkiurheilija",
-  author: "Pekka Penkkiurheilija",
-  url: 'www.pekanpenkkiurheilu.fi',
-  likes: 10
+  title: 'TESTI',
+  author: 'Tero Testaaja',
+  url: 'www.terotestaa.fi',
+  likes: 10000
 })
 
 blog.save()
