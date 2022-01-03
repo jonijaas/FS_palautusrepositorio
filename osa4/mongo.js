@@ -7,7 +7,7 @@ if(process.argv.length<3) {
 
 const password = process.argv[2]
 
-const mongoUrl = `mongodb+srv://fullstack:${password}@cluster0.aq27e.mongodb.net/blogilista-test?retryWrites=true`
+const mongoUrl = MONGODB_URI
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
 
 const blogSchema = mongoose.Schema({
