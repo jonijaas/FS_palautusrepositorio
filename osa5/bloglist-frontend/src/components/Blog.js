@@ -26,7 +26,7 @@ const Blog = ({ blog, handleLikeClick, handleRemoveClick, user }) => {
         <button style={hideWhenVisible} onClick={toggleVisibility}>view</button>
         <button style={showWhenVisible} onClick={toggleVisibility}>hide</button>
       </div>
-      <div style={showWhenVisible}>
+      <div style={showWhenVisible} className='expandable'>
         <div>{blog.url}</div>
         <div>
           likes {blog.likes} <button id={blog.id} onClick={handleLikeClick}>like</button>
