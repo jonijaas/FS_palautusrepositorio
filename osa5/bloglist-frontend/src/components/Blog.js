@@ -20,7 +20,7 @@ const Blog = ({ blog, handleLikeClick, handleRemoveClick, user }) => {
   }
 
   return (
-    <div style={blogStyle}>
+    <div className='blogDiv' style={blogStyle}>
       <div>
         {blog.title} {blog.author}
         <button style={hideWhenVisible} onClick={toggleVisibility}>view</button>
@@ -31,7 +31,7 @@ const Blog = ({ blog, handleLikeClick, handleRemoveClick, user }) => {
         <div>
           likes {blog.likes} <button id={blog.id} onClick={handleLikeClick}>like</button>
         </div>
-        <div>{blog.user.name}</div>
+        <div>{blog.user.name || ''}</div>
         <button style={showIfAllowed} onClick={handleRemoveClick}>remove</button>
       </div>
     </div>
