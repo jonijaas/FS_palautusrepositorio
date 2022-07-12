@@ -2,10 +2,10 @@
   "name": "library-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "library-backend.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node library-backend.js",
-    "dev": "nodemon library-backend.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jonijaas",
@@ -15,6 +15,9 @@
   },
   "dependencies": {
     "apollo-server": "^3.9.0",
-    "graphql": "^16.5.0"
+    "dotenv": "^16.0.1",
+    "graphql": "^16.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.4"
   }
 }
