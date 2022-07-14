@@ -121,11 +121,15 @@ const resolvers = {
 
       try {
         if (!fAuthor) {
-          const fAuthor = new Author({ name: args.author })
-          await fAuthor.save()
+          const cAuthor = new Author({ name: args.author })
+          await cAuthor.save()
+		  const book = new Book({ ...args, author: cAuthor })
+		  await book.save()
+		  return book
         }
-        const book = new Book({ ...args, author: fAuthor._id })
-        return await book.save()
+        const book = new Book({ ...args, author: fAuthor })
+        await book.save()
+		return book
       } catch (error) {
         throw new UserInputError(error.message, {
           invalidArgs: args,
