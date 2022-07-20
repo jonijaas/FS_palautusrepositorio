@@ -10,14 +10,14 @@ const parseArgumentsBmi = (args: Array<string>): BmiValues => {
     return {
       height: Number(args[2]),
       weight: Number(args[3])
-    }
+    };
   } else {
-    throw new Error('Provided values were not numbers!')
+    throw new Error('Provided values were not numbers!');
   }
-}
+};
 
-const calculateBmi = (h: number, w: number): string => {
-  let bmi = w / ((h / 100) * (h / 100));
+export const calculateBmi = (h: number, w: number): string => {
+  const bmi = w / ((h / 100) * (h / 100));
 
   if (bmi < 16) {
     return 'Underweight (Severe thinness)';
@@ -33,20 +33,19 @@ const calculateBmi = (h: number, w: number): string => {
     return 'Obese (Class 1)';
   } else if (bmi < 40) {
     return 'Obese (Class 2)';
-  } else if (bmi >= 40){
+  } else if (bmi >= 40) {
     return 'Obese (Class 3)';
   }
   return 'Something went wrong, unable to calculate bmi!';
-}
+};
 
 try {
   const { height, weight } = parseArgumentsBmi(process.argv);
-  console.log(calculateBmi(height, weight))
+  console.log(calculateBmi(height, weight));
 } catch (error: unknown) {
   let errorMessage = 'Something went wrong.';
   if (error instanceof Error) {
     errorMessage += ' ERROR: ' + error.message;
   }
-
   console.log(errorMessage);
 }
