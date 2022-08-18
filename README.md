@@ -1,5 +1,5 @@
 # Full Stack Open
-Full Stack Open submission repository.
+Repository for Full Stack Open -course.
 
 Part 0: ./osa0  
 Part 1: ./osa1  
