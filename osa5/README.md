@@ -1,3 +1,6 @@
-<h1>Tehtävät osa5</h1>
-<p>bloglist-backend: osassa 4 tehty backend kopioitu osan 5 tehtäviä varten, pieniä muokkauksia Cypress -testejä varten</p>
-<p>bloglist-frontend: osan 5 tehtävät</p>
+# Full Stack Open Part 5 - Testing React apps
+https://fullstackopen.com/en/part5
+
+## Exercises
+bloglist-frontend: 5.1-5.21
+bloglist-backend: cloned from part 4 repository, some adjustments made for Cypress tests
