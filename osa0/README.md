@@ -1,1 +1,4 @@
-Osan 0 tehtävien vastaukset .png ja .txt -muodoissa. Tiedostojen nimet vastaa tehtävänumerointeja.
+# Full Stack Open Part 0 - Fundamentals of Web apps
+Part 0 exercises. Files are named due to tasks.  
+
+https://fullstackopen.com/en/part0
