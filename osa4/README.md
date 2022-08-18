@@ -18,4 +18,4 @@ Run the tests with `npm run test`
 
 Run the ESLint check with `npm run lint`
 
-App requires MongoDB database url as MONGODB_URI and TEST_MONGODB_URI (if using different database for tests).
+App requires MongoDB database url as `MONGODB_URI` and `TEST_MONGODB_URI` (if using different database for tests).
