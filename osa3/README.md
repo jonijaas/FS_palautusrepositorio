@@ -15,6 +15,6 @@ Run the application in development mode with `npm run dev`
 
 Run the application with `npm start`
 
-Run the eslint check with `npm run lint`
+Run the ESLint check with `npm run lint`
 
 App requires MongoDB database url and credentials.
